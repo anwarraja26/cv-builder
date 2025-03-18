@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
+import BuildResume from "./pages/BuildResume";
+import ResumeScore from "./pages/ResumeScore";
+import ResumeCarousel from "./components/ResumeCarousel";
+import Navbar from "./components/Header/Navbar";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (  
+    <div>
+      <Router>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/build-resume" element={<BuildResume />} />
+          <Route path="/resume-score" element={<ResumeScore />} />
+          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/pricing" element={<h1>Pricing</h1>} />
+          <Route path="/organizations" element={<h1>For Organizations</h1>} />
+          <Route path="/signin" element={<h1>Sign In</h1>} />
+          <Route path="/get-started" element={<h1>Get Started</h1>} />
+
+        </Routes>
+      </Router>
+      <ResumeCarousel />
     </div>
   );
 }
