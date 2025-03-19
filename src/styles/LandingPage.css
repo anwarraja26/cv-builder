@@ -13,7 +13,7 @@ body {
   /* /* Alternative gradient options: */
   background: linear-gradient(to right, #fefeff 60%, #5e74f0 100%);
   /* background: linear-gradient(135deg, #ffffff 0%, #e6f7f5 100%); */
-  /* background-color: #f2f7f9; Light bluish-gray background color */
+  /* background-color:#f2f7f9; Light bluish-gray background color */
   overflow: hidden;
   overflow: hidden;
 }
@@ -274,4 +274,154 @@ body {
 .carousel-container .slick-prev:hover:before, 
 .carousel-container .slick-next:hover:before {
   color: #357abd;
+}
+
+
+/* @media */
+@media screen and (min-width: 1200px) {
+  .landing-page .title {
+    width: 55%;
+  }
+  
+  .landing-page .title h1 {
+    font-size: 3.5vw;
+  }
+}
+
+/* Medium screens (tablets and smaller laptops) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .landing-page .title {
+    width: 70%;
+  }
+  
+  .landing-page .title h1 {
+    font-size: 4vw;
+  }
+  
+  .btn {
+    font-size: 1.5vw;
+  }
+  
+  .companies {
+    font-size: 1.8vw;
+  }
+  
+  .landing-page .company-logo {
+    width: 60px;
+  }
+  
+  .landing-page .rotating-image-container {
+    width: 35%;
+    top: 35%;
+  }
+  
+  .carousel-container .slider_head {
+    font-size: 3vw;
+  }
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 767px) {
+  .landing-page {
+    padding: 3vh 5vw;
+    min-height: auto;
+    background: linear-gradient(to bottom, #fefeff 60%, #5e74f0 100%);
+  }
+  
+  .landing-page .title {
+    width: 100%;
+  }
+  
+  .landing-page .title h1 {
+    font-size: 7vw;
+    margin-bottom: 5vh;
+  }
+  
+  .btn {
+    font-size: 4vw;
+    padding: 2vh 4vw;
+    display: block;
+    margin: 2vh 0;
+    text-align: center;
+  }
+  
+  .companies {
+    font-size: 4vw;
+    margin-top: 6vh;
+  }
+  
+  .landing-page .company-logos {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .landing-page .company-logo {
+    width: 50px;
+  }
+  
+  .landing-page .rotating-image-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    right: 0;
+    margin-top: 5vh;
+  }
+  
+  .landing-page .rotating-image {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 0;
+  }
+  
+  .landing-page::after {
+    display: none;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .carousel-container .slider_head {
+    font-size: 5vw;
+  }
+  
+  .carousel-container .resume-card {
+    width: 95%;
+  }
+  
+  .carousel-container .template-action {
+    opacity: 1;
+  }
+  
+  .carousel-container .template-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .landing-page .title h1 {
+    font-size: 8vw;
+  }
+  
+  .btn {
+    font-size: 5vw;
+  }
+  
+  .companies {
+    font-size: 5vw;
+  }
+  
+  .landing-page .company-logo {
+    width: 40px;
+  }
+  
+  .landing-page .rotating-image-container {
+    height: 40vh;
+  }
 }
