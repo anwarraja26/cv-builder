@@ -25,7 +25,7 @@ const LandingPage = () => {
     <section className="landing-page">
       <div className="title">
         <h1>
-          Enhancv's <span className="highlight">Resume Builder</span> helps you get hired at top companies
+          Analyka's <span className="highlight">Resume Builder</span> helps you get hired at top companies
         </h1>
       </div>
       <div className="buttons">
