@@ -5,7 +5,7 @@ import spotify from "../assets/landing-page-images/spotify.png";
 import amazon from "../assets/landing-page-images/amazon.png";
 
 const content = {
-  title: "Enhancv’s Resume Builder helps you get hired at top companies",
+  title: "Analyka’s Resume Builder helps you get hired at top companies",
   buttons: {
     buildResume: "Build Your Resume",
     resumeScore: "Get Your Resume Score",
